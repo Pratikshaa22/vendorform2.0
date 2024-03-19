@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <header>
+        <img src="cottage.png" alt="Cottage Image" class="cottage-image">
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('general')">General</a></li>
+                <li><a href="#" onclick="showSection('communication')">Communication</a></li>
+                <li><a href="#" onclick="showSection('tax-information')">Tax Information</a></li>
+                <li><a href="#" onclick="showSection('ccic')">CCIC</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="general" class="section">
+        <h2>General Information</h2>
+        <div class="column-container">
+            <div class="column">
+                <form id="general-form-column1">
+                    <label for="name_entry">Name:</label>
+                    <input type="text" id="name_entry" name="name_entry">
+                                                
+                    <label for="name_2_entry">Name 2:</label>
+                    <input type="text" id="name_2_entry" name="name_2_entry">
+                                                
+                    <label for="address_entry">Address:</label>
+                    <input type="text" id="address_entry" name="address_entry">
+                                                
+                    <label for="address_2_entry">Address 2:</label>
+                    <input type="text" id="address_2_entry" name="address_2_entry">
+                                                
+                    <label for="post_code_city_entry">Post Code/City:</label>
+                    <select id="post_code_city_entry" name="post_code_city_entry">
+                    <option value="">Select Post Code/City</option>
+                    <option value="india">Post Code/City</option>
+                    <option value="110001">Delhi - 110001</option>
+                    <option value="400001">Mumbai - 400001</option>
+                    <option value="560001">Bangalore - 560001</option>
+                    </select>
+
+                    <label for="country_region_code_entry">Country/Region Code:</label>
+                    <select id="country_region_code_entry" name="country_region_code_entry">
+                    <option value="">Select Country</option>
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="canada">Canada</option>
+                    <option value="australia">Australia</option>
+                    <option value="germany">Germany</option>
+                    <option value="france">France</option>
+                    <option value="japan">Japan</option>
+                    <option value="china">China</option>
+                    </select>
+
+                    <label for="state_code_entry">State Code:</label>
+                    <select id="state_code_entry" name="state_code_entry">
+                    <option value="">Select State</option>
+                    <option value="ap">Andhra Pradesh (AP)</option>
+                    <option value="ar">Arunachal Pradesh (AR)</option>
+                    <option value="as">Assam (AS)</option>
+                    <option value="br">Bihar (BR)</option>
+                    <option value="cg">Chhattisgarh (CG)</option>
+                    <option value="ga">Goa (GA)</option>
+                    <option value="gj">Gujarat (GJ)</option>
+                    <option value="hr">Haryana (HR)</option>
+                    <option value="hp">Himachal Pradesh (HP)</option>
+                    <option value="jk">Jammu and Kashmir (JK)</option>
+                    <option value="jh">Jharkhand (JH)</option>
+                    <option value="ka">Karnataka (KA)</option>
+                    <option value="kl">Kerala (KL)</option>
+                    <option value="mp">Madhya Pradesh (MP)</option>
+                    <option value="mh">Maharashtra (MH)</option>
+                    <option value="mn">Manipur (MN)</option>
+                    <option value="ml">Meghalaya (ML)</option>
+                    <option value="mz">Mizoram (MZ)</option>
+                    <option value="nl">Nagaland (NL)</option>
+                    <option value="or">Odisha (OR)</option>
+                    <option value="pb">Punjab (PB)</option>
+                    <option value="rj">Rajasthan (RJ)</option>
+                    <option value="sk">Sikkim (SK)</option>
+                    <option value="tn">Tamil Nadu (TN)</option>
+                    <option value="tg">Telangana (TG)</option>
+                    <option value="tr">Tripura (TR)</option>
+                    <option value="ut">Uttarakhand (UT)</option>
+                    <option value="up">Uttar Pradesh (UP)</option>
+                    <option value="wb">West Bengal (WB)</option>
+                    </select>
+
+                                                
+                    <label for="primary_contact_no_entry">Primary Contact No.:</label>
+                    <input type="text" id="primary_contact_no_entry" name="primary_contact_no_entry">
+                                                
+                    <label for="mobile_no_entry">Mobile No.:</label>
+                    <input type="text" id="mobile_no_entry" name="mobile_no_entry">
+                </form>
+            </div>
+            <div class="column">
+                <form id="general-form-column2">
+                    <label for="search_name_entry">Search Name:</label>
+                    <input type="text" id="search_name_entry" name="search_name_entry">
+
+                    <label for="district_entry">District:</label>
+                    <input type="text" id="district_entry" name="district_entry">
+
+                    <label for="gender_entry">Gender:</label>
+                        <select id="gender_entry" name="gender_entry">
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                                
+                    <label class="disabled-label" for="security_deposit_balance_entry">Security Deposit Balance:</label>
+                    <input type="text" id="security_deposit_balance_entry" name="security_deposit_balance_entry" disabled>
+                                
+                    <label for="date_of_submission">Date of Submission:</label>
+                    <input type="date" id="date_of_submission" name="date_of_submission">
+
+                    
+                    <label for="global_dimension_1_code_entry">Global Dimension 1 Code:</label>
+                    <input type="text" id="global_dimension_1_code_entry" name="global_dimension_1_code_entry">
+                
+                    <label for="global_dimension_2_code_entry">Global Dimension 2 Code:</label>
+                    <input type="text" id="global_dimension_2_code_entry" name="global_dimension_2_code_entry">
+                    
+                                
+                </form>
+            </div>
+        </div>
+        <button class="submit-button" type="submit">Submit</button>
+    </div>
+
+    <div id="communication" class="section">
+        <h2>Communication</h2>
+        <div class="column-container">
+            <div class="column">
+                <form id="communication-form-column1">
+                    <label for="phone_no_entry">Phone No.:</label>
+                    <input type="text" id="phone_no_entry" name="phone_no_entry">
+                                    
+                    <label for="fax_no_entry">Fax No.:</label>
+                    <input type="text" id="fax_no_entry" name="fax_no_entry">
+                                    
+                    <label for="email_entry">Email:</label>
+                    <input type="email" id="email_entry" name="email_entry">
+                </form>
+            </div>
+            <div class="column">
+                <form id="communication-form-column2">
+                    <label for="telex_no_entry">Telex No.:</label>
+                    <input type="text" id="telex_no_entry" name="telex_no_entry">
+                </form>
+            </div>
+        </div>
+        <button class="submit-button" type="submit">Submit</button>
+    </div>
+
+    <div id="invoicing" class="section">
+        <h2>Invoicing</h2>
+        <div class="column-container">
+            <div class="column">
+                <form id="invoicing-form-column1">
+                
+            </div>
+            <div class="column">
+                <form id="invoicing-form-column2">
+                    
+                    <label for="invoice_disc_code_entry">Invoice Discount Code:</label>
+                    <input type="text" id="invoice_disc_code_entry" name="invoice_disc_code_entry">
+                </form>
+            </div>
+        </div>
+        <button class="submit-button" type="submit">Submit</button>
+    </div>
+
+    <div id="tax-information" class="section">
+        <h2>Tax Information</h2>
+        <div class="column-container">
+            <div class="column">
+                <form id="tax-information-form-column1">
+                    <label for="collectorate_entry">Collectorate:</label>
+                    <input type="text" id="collectorate_entry" name="collectorate_entry">
+                    
+                    <label for="vendor_type_entry">Vendor Type:</label>
+                    <input type="text" id="vendor_type_entry" name="vendor_type_entry">
+
+                    <label for="vendor_location_entry">Vendor Location:</label>
+                    <input type="text" id="vendor_location_entry" name="vendor_location_entry">
+
+                    <label for="gst_registration_no_entry">GST Registration No.:</label>
+                    <input type="text" id="gst_registration_no_entry" name="gst_registration_no_entry">
+                    
+                    <label for="gst_vendor_type_entry">GST Vendor Type:</label>
+                    <input type="text" id="gst_vendor_type_entry" name="gst_vendor_type_entry">
+                </form>
+            </div>
+            <div class="column">
+                <form id="tax-information-form-column2">    
+                    <label for="pan_no_entry">P.A.N. No.:</label>
+                    <input type="text" id="pan_no_entry" name="pan_no_entry">
+                    
+                    <label for="pan_status_entry">P.A.N. Status:</label>
+                    <input type="text" id="pan_status_entry" name="pan_status_entry">
+                    
+                    <label for="pan_reference_no_entry">P.A.N. Reference No.:</label>
+                    <input type="text" id="pan_reference_no_entry" name="pan_reference_no_entry">
+
+                    <label for="aadhar_card_no_entry">Aadhar Card No.</label>
+                    <input type="text" id="aadhar_card_no_entry" name="aadhar_card_no_entry">
+                </form>
+            </div>
+        </div>
+        <button class="submit-button" type="submit">Submit</button>
+    </div>
+
+    <div id="ccic" class="section">
+        <h2>CCIC</h2>
+        <div class="column-container">
+            <div class="column">
+                <form id="ccic-form-column1">
+                    <label for="vendor_categories_entry">Vendor Categories:</label>
+                    <input type="text" id="vendor_categories_entry" name="vendor_categories_entry">
+                    
+                    <label for="vendor_credit_limit_entry">Vendor Credit Limit:</label>
+                    <input type="text" id="vendor_credit_limit_entry" name="vendor_credit_limit_entry">
+                    
+                    <label for="award_type_entry">Award Type:</label>
+                    <select id="award_type_entry" name="award_type_entry">
+                        <option value="select">Select</option>
+                        <option value="National Awardee">National Awardee</option>
+                        <option value="State Awardee">State Awardee</option>
+                        <option value="Shlipguru">Shlipguru</option>
+                        <option value="Sant Kabir">Sant Kabir</option>
+                    </select>
+                    
+                    <label for="awardee_entry">Awardee:</label>
+                    <input type="text" id="awardee_entry" name="awardee_entry">
+                    
+                    <label for="approval_date_ccic_entry">Approval Date of CCIC:</label>
+                    <input type="date" id="approval_date_ccic_entry" name="approval_date_ccic_entry">
+                
+                    <label for="original_state_entry">Original State:</label>
+                    <input type="text" id="original_state_entry" name="original_state_entry">
+
+                    <label for="msme_entry">MS/ME:</label>
+                    <input type="text" id="msme_entry" name="msme_entry">
+                    
+                    <label for="msme_type_entry">MS/ME Type:</label>
+                    <select id="msme_type_entry" name="msme_type_entry">
+                        <option value="select">Select</option>
+                        <option value="DICS">DICS</option>
+                        <option value="KVIC">KVIC</option>
+                        <option value="KVIB">KVIB</option>
+                        <option value="DHC">DHC</option>
+                        <option value="DHL">DHL</option>
+                        <option value="MOMSME">MOMSME</option>
+                        <option value="UAM">UAM</option>
+                    </select>
+                    
+                    <label for="msme_registration_no_entry">MS/ME Registration No.:</label>
+                    <input type="text" id="msme_registration_no_entry" name="msme_registration_no_entry">
+                </form>
+            </div>
+            <div class="column">
+                <form id="ccic-form-column2">
+                    <label for="concessionaire_vendor_entry">Concessionaire Vendor:</label>
+                    <input type="text" id="concessionaire_vendor_entry" name="concessionaire_vendor_entry">
+                    <label for="vendor_commission_entry">Vendor Commission %:</label>
+                    <input type="text" id="vendor_commission_entry" name="vendor_commission_entry">
+                
+                    <label for="minority_entry">Minority:</label>
+                    <select id="minority_entry" name="minority_entry">
+                        <option value="select">Select</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+
+                
+                    <label for="minority_type_entry">Minority Type:</label>
+                    <select id="minority_type_entry" name="minority_type_entry">
+                        <option value="select">Select</option>
+                        <option value="Muslim">Muslim</option>
+                        <option value="Sikh">Sikh</option>
+                        <option value="Budhist">Budhist</option>
+                        <option value="Parsi">Parsi</option>
+                        <option value="Christian">Christian</option>
+                    </select>
+                
+                    <label for="caste_entry">Caste:</label>
+                        <select id="caste_entry" name="caste_entry">
+                            <option value="select">Select Caste</option>
+                            <option value="General">General</option>
+                            <option value="OBC">OBC</option>
+                            <option value="SC/ST">SC/ST</option>
+                        </select>
+
+
+                    <label for="license_fee_entry">License Fee %:</label>
+                    <input type="text" id="license_fee_entry" name="license_fee_entry">
+
+                    <label for="discount_offered_by_the_vendor_entry">Discount Offered by Vendor:</label>
+                    <input type="text" id="discount_offered_by_the_vendor_entry" name="discount_offered_by_the_vendor_entry">
+            </form>
+        </div>
+    </div>
+        <button class="submit-button" type="submit">Submit</button>
+    </div>    
+    <script src="registration.js"></script>
+</body>
+</html>
